@@ -1,0 +1,43 @@
+.mainSection {
+    height: 100vh;
+    background: rgb(28, 28, 28);
+}
+.container {
+    padding: 2% 0% 0 0;
+    .imagesContainer {
+        background-color: rgba(0, 0, 0, 0.563);
+        margin: 2% 0% 0 5%;
+        padding: 1% 0 1% 0;
+        border-radius: 15px 0 0 15px;
+        display: flex;
+        justify-content: right;
+        position: relative;
+        .mainImage {
+            width: 65%;
+            border-radius: 10px 0 0 0;
+        }
+        .additionalImageOne {
+            width: 25%;
+            position: absolute;
+            left: 20%;
+            bottom: -10%;
+        }
+        .additionalImageTwo {
+            width: 18%;
+            position: absolute;
+            left: 45%;
+            bottom: -5%;
+        }
+        .title{
+            width: 30%;
+            z-index: 999;
+            line-height: 60px;
+            position: absolute;
+            color: rgb(208, 208, 208);
+            font-size: 65px;
+            left: 5%;
+            text-transform: uppercase;
+            top: 20%;
+        }
+    }
+}
