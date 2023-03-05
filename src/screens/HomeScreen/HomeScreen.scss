@@ -1,6 +1,5 @@
 .mainSection {
     height: 100vh;
-    background: rgb(28, 28, 28);
 }
 .container {
     padding: 2% 0% 0 0;
@@ -28,16 +27,107 @@
             left: 45%;
             bottom: -5%;
         }
-        .title{
-            width: 30%;
+        .title {
+            width: 95%;
             z-index: 999;
-            line-height: 60px;
+            line-height: 50px;
             position: absolute;
-            color: rgb(208, 208, 208);
-            font-size: 65px;
+            color: #a49c94;
+            font-size: 85px;
             left: 5%;
-            text-transform: uppercase;
             top: 20%;
+            span {
+                font-size: 40px;
+                color: #746c6a;
+                text-transform: capitalize;
+            }
         }
     }
+}
+.headingTitle {
+    button {
+        padding: 15px 40px 15px 40px;
+        position: absolute;
+        top: 45%;
+        left: 10%;
+        color: #a49c94;
+        font-size: 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        border: none;
+        background-color: #3e3935;
+        text-transform: uppercase;
+    }
+    button:hover {
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.1);
+        cursor: pointer;
+        background-color: #746c6a;
+    }
+}
+.secondSection {
+    height: 80vh;
+    padding: 5% 15%;
+}
+
+.wrapperr {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+.wrapperr .box {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.wrapperr .box .front-face {
+    background-position: 50%;
+    border-radius: 5px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s ease;
+    img {
+        width: 100%;
+        height: fill;
+    }
+}
+.box .front-face h3,
+.box .back-face h3 {
+    position: absolute;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.box .back-face {
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 400px;
+    width: 100%;
+    color: #fff;
+    opacity: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    background-color: #746c6a45;
+    transform: translateY(110px) rotateX(-90deg);
+    transition: all 0.5s ease;
+}
+.box .back-face p {
+    margin-top: 10px;
+    text-align: justify;
+}
+.box:hover .back-face {
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+.box:hover .front-face {
+    opacity: 0.2;
 }
