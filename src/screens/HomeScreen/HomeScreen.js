@@ -1,14 +1,36 @@
 import mainImage from "../../assets/img/mainImage.png"
+import MotoCategoriesList from "../../components/MotoShop/MotoCategoriesList";
+import MotoProductsList from "../../components/MotoShop/MotoProductsList";
 import "../HomeScreen/HomeScreen.scss"
 
 const HomeScreen = () => {
+
+    const categories = [
+        {
+            name: 'SuperMoto',
+            image: 'https://i.pinimg.com/originals/11/6d/d0/116dd000613206ef8d4c711844405791.jpg'
+        },
+        {
+            name: 'SuperBike',
+            image: 'https://i.pinimg.com/originals/11/6d/d0/116dd000613206ef8d4c711844405791.jpg'
+        },
+        {
+            name: 'MotoCross',
+            image: 'https://i.pinimg.com/originals/11/6d/d0/116dd000613206ef8d4c711844405791.jpg'
+        },
+        {
+            name: 'StreetBike',
+            image: 'https://i.pinimg.com/originals/11/6d/d0/116dd000613206ef8d4c711844405791.jpg'
+        },
+    ];
+
     return (
         <div>
             <div className="mainSection">
-                <div className="container">
+                <div className="mainSectionContainer">
                     <div className="imagesContainer">
                         <div className="headingTitle">
-                            <h1 className="title">Moto Dash <br></br> <span>Becouse We Ride</span></h1>
+                            <h1 className="title">Moto Dash <br></br> <span>Becau se We Ride</span></h1>
                             <button>About Us</button>
                         </div>
                         <img className="mainImage" src="https://img1.fonwall.ru/o/gw/wallpaper-triumph-thruxton-tfc-black-motorcycle-side-view-motorcycles.jpeg" />
@@ -18,56 +40,15 @@ const HomeScreen = () => {
                 </div>
             </div>
             <section className="secondSection">
-                <div class="wrapperr">
-                    <div class="box">
-                        <div class="front-face">
-                            <img src="https://www.bikesrepublic.com/wp-content/uploads/2017/04/BMW-HP4-RaceP90254389_highRes.jpg" />
-                            <h3>SuperBike</h3>
-                        </div>
-                        <div class="back-face">
-                            <span>Web Design</span>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="front-face">
-                            <img src="http://cdn.shopify.com/s/files/1/0012/8647/1793/articles/16.jpg?v=1645534830" />
-                            <h3>Dirtbikes</h3>
-                        </div>
-                        <div class="back-face">
-                            <span>Web Design</span>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="front-face">
-                            <img src="https://s7g10.scene7.com/is/image/ktm/79-DUKE-Hero-Image:Medium?wid=1607&hei=1200&dpr=off" />
-                            <h3>Naked Bikes</h3>
-                        </div>
-                        <div class="back-face">
-                            <span>Web Design</span>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="front-face">
-                            <img src="https://t3.ftcdn.net/jpg/05/07/95/20/360_F_507952092_Ar4DHhUkuPLugIFJdUIfs6kWpo9jTf74.jpg" />
-                            <h3>Advertising</h3>
-                        </div>
-                        <div class="back-face">
-                            <span>Advertising</span>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.
-                            </p>
-                        </div>
-                    </div>
+                <div className="secondSectionTitleContainer">
+                    <h2 className="secondSectionTitle">Its all about power</h2>
+                    <p className="secondSectionParagraph">Contact us and try the model you like</p>
                 </div>
+                <div className="container">
+                    <MotoCategoriesList categories={categories} />
+                </div>
+            </section>
+            <section>
             </section>
         </div>
     )

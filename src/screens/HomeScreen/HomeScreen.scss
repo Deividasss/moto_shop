@@ -1,7 +1,8 @@
 .mainSection {
     height: 100vh;
+    background: rgb(28, 28, 28);
 }
-.container {
+.mainSectionContainer {
     padding: 2% 0% 0 0;
     .imagesContainer {
         background-color: rgba(0, 0, 0, 0.563);
@@ -66,68 +67,19 @@
     }
 }
 .secondSection {
-    height: 80vh;
-    padding: 5% 15%;
-}
-
-.wrapperr {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-}
-.wrapperr .box {
-    width: 100%;
-    height: 400px;
-    position: relative;
-}
-.wrapperr .box .front-face {
-    background-position: 50%;
-    border-radius: 5px;
-    height: 400px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: all 1s ease;
-    img {
-        width: 100%;
-        height: fill;
+    padding: 0% 15% 0 15%;
+    background: rgb(28, 28, 28);
+    .secondSectionTitleContainer {
+        padding: 5% 0 2% 0;
+        .secondSectionTitle {
+            color: #a49c94;
+            text-align: right;
+            font-size: 65px;
+        }
+        .secondSectionParagraph {
+            color: #746c6a;
+            font-size: 30px;
+            text-align: right;
+        }
     }
-}
-.box .front-face h3,
-.box .back-face h3 {
-    position: absolute;
-    font-size: 22px;
-    font-weight: 600;
-    text-transform: uppercase;
-    background: linear-gradient(-135deg, #c850c0, #4158d0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.box .back-face {
-    position: absolute;
-    border-radius: 5px;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    height: 400px;
-    width: 100%;
-    color: #fff;
-    opacity: 0;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    background-color: #746c6a45;
-    transform: translateY(110px) rotateX(-90deg);
-    transition: all 0.5s ease;
-}
-.box .back-face p {
-    margin-top: 10px;
-    text-align: justify;
-}
-.box:hover .back-face {
-    opacity: 1;
-    transform: rotateX(0deg);
-}
-.box:hover .front-face {
-    opacity: 0.2;
 }

@@ -1,0 +1,20 @@
+{
+    "categories": [
+        {
+            "name": "SuperMoto",
+            "image": "https: //i.pinimg.com/originals/11/6d/d0/116dd000613206ef8d4c711844405791.jpg"
+        },
+        {
+            "name": "SuperBike",
+            "image": "https: //i.pinimg.com/originals/11/6d/d0/116dd000613206ef8d4c711844405791.jpg"
+        },
+        {
+            "name": "MotoCross",
+            "image": "https: //i.pinimg.com/originals/11/6d/d0/116dd000613206ef8d4c711844405791.jpg"
+        },
+        {
+            "name": "StreetBike",
+            "image": "https: //i.pinimg.com/originals/11/6d/d0/116dd000613206ef8d4c711844405791.jpg"
+        }
+    ]
+}

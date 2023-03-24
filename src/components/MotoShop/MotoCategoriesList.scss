@@ -1,0 +1,33 @@
+.category-grid {
+    font-family: "Poppins", sans-serif;
+    transition: all 0.7s ease 0s;
+    margin-bottom: 3%;
+}
+.category-grid:hover {
+    .category-image img {
+        opacity: 0.3;
+        transition: ease 0.7s;
+        transform: scale(1.15);
+    }
+}
+.category-grid .category-image {
+    overflow: hidden;
+    position: relative;
+    max-height: 500px;
+    border-radius: 5px;
+}
+
+.category-grid .category-image img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    cursor: pointer;
+}
+.category-title {
+    font-size: 55px;
+    position: absolute;
+    bottom: 5vh;
+    left: 3vh;
+    color: #a49c94;
+    font-weight: 600;
+}
